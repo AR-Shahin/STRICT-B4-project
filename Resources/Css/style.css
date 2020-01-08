@@ -378,3 +378,6 @@ footer ul li:nth-child(3):hover .fab{
 footer ul li:nth-child(4):hover .fab{
   background: #0077B5;
 }
+.my-warp{
+    overflow: hidden;
+}
