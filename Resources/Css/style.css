@@ -77,6 +77,7 @@ section{
 }
 .btn{
     text-decoration: none;
+    -webkit-transition: .6s ease-in-out;
     transition: .6s ease-in-out;
     background: transparent;
     padding: .8rem 1.rem;
@@ -102,6 +103,7 @@ header nav ul li a{
     font-size: 1.4rem;
     text-transform: uppercase;
     color: #111!important;
+    -webkit-transition: .6s;
     transition: .6s;
 }
 
@@ -111,6 +113,7 @@ header nav ul li a:hover{
 /* hero section*/
 
 .hero-section{
+    background-image: -webkit-linear-gradient(rgba(114,113,134,.4),rgba(114,113,134,.4)),url(../Images/banner.png);
     background-image: linear-gradient(rgba(114,113,134,.4),rgba(114,113,134,.4)),url(../Images/banner.png);
     height: 75vh;
     background-size: cover;
@@ -124,7 +127,8 @@ header nav ul li a:hover{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     text-align: center;
 }
 .hero-section .content h1{
@@ -144,6 +148,7 @@ header nav ul li a:hover{
 .hero-section .content .btn-banner{
     border: 1.2px solid #15a4fa;
     padding: 1rem 3.5rem;
+    -webkit-transition: .6s;
     transition: .6s;
     position: relative;
     z-index: 1;
@@ -157,6 +162,7 @@ header nav ul li a:hover{
     bottom: 0;
     background: #15a4fa;
     z-index: -1;
+    -webkit-transition: .6s;
     transition: .6s;
     border-radius: 2px;
 }
@@ -166,7 +172,8 @@ header nav ul li a:hover{
 }
 .hero-section .content .btn-banner:hover:after{
     right: 0;
-    transition-delay: .1s; 
+    -webkit-transition-delay: .1s;
+            transition-delay: .1s; 
 }
 .hero-section .content .btn-banner .fas{
     margin-left: .5rem;
@@ -271,15 +278,22 @@ header nav ul li a:hover{
     right: 0;
     bottom: 0;
     background: rgba(21, 164, 250, 0.75);
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: .6s;
     transition: .6s;
 }
 .showcase-section .img-box .hover-content ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     position: absolute;
 }
 .showcase-section .img-box .hover-content ul li{
@@ -296,10 +310,12 @@ header nav ul li a:hover{
 }
 
 .showcase-section .img-box:hover .hover-content{
-    transform: scale(1)
+    -webkit-transform: scale(1);
+            transform: scale(1)
 } 
  /* contact -section*/
 .contact-section{
+    background-image: -webkit-linear-gradient(rgba(43,54,74,.8),rgba(43,54,74,.7)),url('../Images/call-to-action.png');
     background-image: linear-gradient(rgba(43,54,74,.8),rgba(43,54,74,.7)),url('../Images/call-to-action.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -336,6 +352,7 @@ header nav ul li a:hover{
 .contact-section .btn-contact{
      margin-top: -.5rem;
     border: 1px solid #15a4fa;
+    -webkit-transition: .6s;
     transition: .6s;
     padding: .8rem 3rem;
 }
@@ -345,9 +362,14 @@ footer{
     padding: 3rem 0;
 }
 footer ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 footer span{
     font-size: 1.4rem;
@@ -364,6 +386,7 @@ footer ul li .fab{
     font-size: 2rem ;
     line-height: 2;
     border-radius: 3px;
+    -webkit-transition: .6s;
     transition: .6s;
 }
 footer ul li:nth-child(1):hover .fab{
