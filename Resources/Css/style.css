@@ -404,3 +404,21 @@ footer ul li:nth-child(4):hover .fab{
 .my-warp{
     overflow: hidden;
 }
+.scroll{
+    height: 40px;
+    width: 40px;
+    background: #3498db;
+    position: fixed;
+    right: 1%;
+    bottom: 3%;
+    border-radius: 5%;
+    color: #fff;
+    text-align: center;
+}
+.scroll .fas{
+    font-size: 24px;
+    padding: 7px;;
+}
+.active{
+    background:#3498db;
+}
